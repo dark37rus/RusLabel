@@ -1,3 +1,0 @@
-"# RusLabel" 
-"# Ruslabel" 
-"# Ruslabel" 
