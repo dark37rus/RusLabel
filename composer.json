@@ -11,7 +11,8 @@
   "require": {
     "johnpbloch/wordpress-core-installer": "*",
     "johnpbloch/wordpress": "*",
-    "wpackagist-plugin/wordpress-seo": "*"
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/jetpack": "*"
   },
   "extra": {
     "wordpress-install-dir": "wp",
