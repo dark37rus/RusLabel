@@ -1,9 +1,24 @@
 {
+  "name": "pmg/composer-wp-example",
+  "description": "Getting start with WordPress and Composer",
+  "license": "MIT",
+  "repositories": [
+    {
+      "type":"composer",
+      "url":"https://wpackagist.org"
+    }
+  ],
   "require": {
-    "php": ">=5.4",
-    "johnpbloch/wordpress": "*"
+    "johnpbloch/wordpress-core-installer": "*",
+    "johnpbloch/wordpress": "*",
+    "wpackagist-plugin/wordpress-seo": "*"
   },
   "extra": {
-    "wordpress-install-dir": "app/wp"
+    "wordpress-install-dir": "wp",
+    "installer-paths": {
+      "wp/wp-content/plugins/{$name}": ["type:wordpress-plugin"],
+      "wp/wp-content/themes/{$name}": ["type:wordpress-theme"],
+      "wp/wp-content/mu-plugins/{$name}": ["type:wordpress-muplugin"]
+    }
   }
 }
