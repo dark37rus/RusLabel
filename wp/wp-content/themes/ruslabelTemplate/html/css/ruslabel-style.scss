@@ -1,0 +1,46 @@
+$border_color: #ddd;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.header_site {
+  background: #fff;
+  border-bottom: 1px solid $border_color;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+}
+.header_site__content {
+  display: flex;
+  align-items: center;
+  .fas {
+    padding: 10px 0;
+  }
+  .logotype {
+    max-height: 30px;
+    margin: auto;
+    display: block;
+  }
+}
+#menu_swither {
+  display: flex;
+  justify-content: center;
+}
+
+// Большие девайсы (десктопы, >= 992px)
+@media (min-width: 992px) {
+  .header_site {
+      min-height: 130px;
+      border: none;
+    .logotype {
+      margin: 0;
+      min-height: 80px;
+    }
+  }
+  #menu_swither {
+    display: none;
+  }
+}
