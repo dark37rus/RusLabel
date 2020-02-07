@@ -1,42 +1,14 @@
 <?php
-/**
- * The base configuration for WordPress
- *
- * The wp-config.php creation script uses this file during the
- * installation. You don't have to use the web site, you can
- * copy this file to "wp-config.php" and fill in the values.
- *
- * This file contains the following configurations:
- *
- * * MySQL settings
- * * Secret keys
- * * Database table prefix
- * * ABSPATH
- *
- * @link https://codex.wordpress.org/Editing_wp-config.php
- *
- * @package WordPress
- */
-
-// ** MySQL settings - You can get this info from your web host ** //
-/** The name of the database for WordPress */
-define( 'DB_NAME', 'db_ruslabel' );
-
-/** MySQL database username */
-define( 'DB_USER', 'root' );
-
-/** MySQL database password */
-define( 'DB_PASSWORD', '' );
-
-/** MySQL hostname */
-define( 'DB_HOST', '127.0.0.1:3309' );
-
-/** Database Charset to use in creating database tables. */
-define( 'DB_CHARSET', 'utf8' );
-
-/** The Database Collate type. Don't change this if in doubt. */
-define( 'DB_COLLATE', '' );
-
+if ( file_exists( dirname( __FILE__ ) . '/local-config.php' ) ) {
+    define( 'WP_LOCAL_DEV', true );
+    include( dirname( __FILE__ ) . '/local-config.php' );
+} else {
+    define( 'WP_LOCAL_DEV', false );
+    define( 'DB_NAME', '%%DB_NAME%%' );
+    define( 'DB_USER', '%%DB_USER%%' );
+    define( 'DB_PASSWORD', '%%DB_PASSWORD%%' );
+    define( 'DB_HOST', '%%DB_HOST%%' ); // Probably 'localhost'
+}
 /**#@+
  * Authentication Unique Keys and Salts.
  *
