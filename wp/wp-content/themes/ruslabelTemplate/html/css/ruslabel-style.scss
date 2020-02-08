@@ -1,17 +1,20 @@
 $border_color: #ddd;
-
+$fiol: #381778;
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 .header_site {
+  padding: 15px 0;
   background: #fff;
   border-bottom: 1px solid $border_color;
-  height: 60px;
   width: 100%;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  position: fixed;
 }
 .header_site__content {
   display: flex;
@@ -30,17 +33,96 @@ $border_color: #ddd;
   justify-content: center;
 }
 
+.level_one_text {
+  font-size: 18px;
+  font-weight: 800;
+}
+.header_site__contacts {
+  display: none;
+  .info_block {
+    flex-direction: column;
+    color: $fiol;
+    .level_one_text {
+      font-size: 18px;
+    }
+    .level_two_text {
+      font-size: 14px;
+    }
+  }
+}
+.menu_line {
+  display: none;
+  width: 100%;
+  background: #fff;
+}
+.carousel-caption {
+  text-align: left;
+  right: 10%;
+  left: 10%;
+  h5 {
+    font-weight: 700;
+    font-size: 24px;
+    text-shadow: 0 0 5px #000000,
+             -0    0 1px #000000;
+  }
+  p {
+    text-shadow: 0 0 5px #000000,
+              -0   0 1px #000000;
+  }
+}
+#carouselExampleCaptions {
+  width: 100%;
+}
+.carousel-item {
+  img {
+    width: 100%;
+    height: 360px;
+    background-size: cover;
+    filter: brightness(70%);
+    }
+}
 // Большие девайсы (десктопы, >= 992px)
 @media (min-width: 992px) {
+  .header_site__contacts {
+    display: flex;
+  }
   .header_site {
+    padding: 0;
       min-height: 130px;
       border: none;
+      justify-content: center;
     .logotype {
       margin: 0;
-      min-height: 80px;
+      min-height: 60px;
+    }
+    & > .container {
+      padding: 25px 0;
     }
   }
   #menu_swither {
     display: none;
+  }
+  .menu_line {
+    display: flex;
+    background: $fiol;
+    width: 100%;
+    font-weight: 700;
+    ul {
+      display: flex;
+      margin: 0;
+      list-style: none;
+      padding: 15px;
+      li {
+        float: left;
+        a {
+          font-size: 14px;
+          &:nth-child(1) {
+            padding-left: 0;
+          }
+          color: #fff;
+          padding: 22px;
+        }
+      }
+    }
   }
 }

@@ -1,15 +1,18 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap");
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
 
 .header_site {
+  padding: 15px 0;
   background: #fff;
   border-bottom: 1px solid #ddd;
-  height: 60px;
   width: 100%;
   display: flex;
-  align-items: center;
-  position: fixed; }
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .header_site__content {
   display: flex;
@@ -25,15 +28,80 @@
   display: flex;
   justify-content: center; }
 
+.level_one_text {
+  font-size: 18px;
+  font-weight: 800; }
+
+.header_site__contacts {
+  display: none; }
+  .header_site__contacts .info_block {
+    flex-direction: column;
+    color: #381778; }
+    .header_site__contacts .info_block .level_one_text {
+      font-size: 18px; }
+    .header_site__contacts .info_block .level_two_text {
+      font-size: 14px; }
+
+.menu_line {
+  display: none;
+  width: 100%;
+  background: #fff; }
+
+.carousel-caption {
+  text-align: left;
+  right: 10%;
+  left: 10%; }
+  .carousel-caption h5 {
+    font-weight: 700;
+    font-size: 24px;
+    text-shadow: 0 0 5px #000000, -0    0 1px #000000; }
+  .carousel-caption p {
+    text-shadow: 0 0 5px #000000, -0   0 1px #000000; }
+
+#carouselExampleCaptions {
+  width: 100%; }
+
+.carousel-item img {
+  width: 100%;
+  height: 360px;
+  background-size: cover;
+  filter: brightness(70%); }
+
 @media (min-width: 992px) {
+  .header_site__contacts {
+    display: flex; }
+
   .header_site {
+    padding: 0;
     min-height: 130px;
-    border: none; }
+    border: none;
+    justify-content: center; }
     .header_site .logotype {
       margin: 0;
-      min-height: 80px; }
+      min-height: 60px; }
+    .header_site > .container {
+      padding: 25px 0; }
 
   #menu_swither {
-    display: none; } }
+    display: none; }
+
+  .menu_line {
+    display: flex;
+    background: #381778;
+    width: 100%;
+    font-weight: 700; }
+    .menu_line ul {
+      display: flex;
+      margin: 0;
+      list-style: none;
+      padding: 15px; }
+      .menu_line ul li {
+        float: left; }
+        .menu_line ul li a {
+          font-size: 14px;
+          color: #fff;
+          padding: 22px; }
+          .menu_line ul li a:nth-child(1) {
+            padding-left: 0; } }
 
 /*# sourceMappingURL=ruslabel-style.css.map */
