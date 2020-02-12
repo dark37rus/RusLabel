@@ -1,4 +1,9 @@
-$(window).on('load', function () {
-    var $preloader = $('#p_prldr');
-    $preloader.delay(2000).addClass('d-none');
-}
+jQuery(document).ready(function($){
+        var $preloader = $('#p_prldr');
+        function preLoader () {
+            $('#p_prldr').fadeOut(1000);
+        }
+        setTimeout(preLoader, 3000);
+});
+
+
