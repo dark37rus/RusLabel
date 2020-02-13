@@ -3,7 +3,7 @@ jQuery(document).ready(function($){
         function preLoader () {
             $('#p_prldr').fadeOut(1000);
         }
-        setTimeout(preLoader, 3000);
+        setTimeout(preLoader, 1300);
 });
 
 
