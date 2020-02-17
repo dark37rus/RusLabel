@@ -17,9 +17,11 @@ if ( ! function_exists( 'ruslabel_setup' ) ) :
         add_theme_support( 'automatic-feed-links' );
         add_theme_support( 'title-tag' );
         add_theme_support( 'post-thumbnails' );
+
         register_nav_menus( array(
-            'menu-1' => esc_html__( 'Primary', 'ruslabel' ),
-        ) );
+            'menu-1' => esc_html__( 'Главное меню', 'ruslabel' ),
+        ));
+
         add_theme_support( 'html5', array(
             'search-form',
             'comment-form',
@@ -36,7 +38,7 @@ if ( ! function_exists( 'ruslabel_setup' ) ) :
         add_theme_support( 'customize-selective-refresh-widgets' );
 
         add_theme_support( 'custom-logo', array(
-            'height'      => 250,
+            'height'      => 80,
             'width'       => 250,
             'flex-width'  => true,
             'flex-height' => true,

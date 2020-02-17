@@ -1,3 +1,24 @@
+/*!*!*/
+/*Theme Name: RusLabel*/
+/*Theme URI: http://underscores.me/*/
+/*Author: Mamaev Roman*/
+/*Author URI: http://biframe.ru*/
+/*Description: Макет сайта для компании Руслэйбл*/
+/*Version: 1.0.0*/
+/*License: GNU General Public License v2 or later*/
+/*License URI: LICENSE*/
+/*Text Domain: ruslabel*/
+/*Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready*/
+
+/*This theme, like WordPress, is licensed under the GPL.*/
+/*Use it to make something cool, have fun, and share what you've learned with others.*/
+
+/*RusLabel is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.*/
+/*Underscores is distributed under the terms of the GNU GPL v2 or later.*/
+
+/*Normalizing styles have been helped along thanks to the fine work of*/
+/*Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/*/
+/**!*/
 $border_color: #ddd;
 $fiol: #381778;
 $red: #E30B17;
@@ -40,8 +61,9 @@ $black_bg: #1c1c1c;
   .fas {
     padding: 10px 0;
   }
-  .logotype img{
-    max-height: 30px;
+  .custom-logo {
+    height: 30px;
+    width: auto;
     margin: auto;
     display: block;
   }
@@ -92,7 +114,7 @@ $black_bg: #1c1c1c;
   }
 
   .menu li a:hover {
-    background-color: #eee;
+    background-color: #f1f1f1;
   }
 
   .menu__dropdown:after {
@@ -263,12 +285,6 @@ footer {
     font-size: 0.8rem;
     color: #fff;
   }
-  form {
-    color: #000!important;
-  }
-  .caption_text, p {
-    color: #fff;
-  }
   .caption_footer_widget {
     font-weight: bold;
     font-size: 16px;
@@ -287,13 +303,14 @@ footer {
           color: #B0B0B0;
         }
       }
-
     }
   }
+
   .bottom_line_site {
     background: #373737;
     font-size: 12px;
     height: 30px;
+    color: #fff;
     display: flex;
     align-items: center;
     .container {
@@ -466,7 +483,7 @@ footer {
     min-height: 130px;
     border: none;
     justify-content: center;
-    .logotype {
+    .custom-logo {
       margin: 0;
       min-height: 60px;
     }
@@ -513,6 +530,9 @@ footer {
           &:hover {
             background: none;
           }
+        }
+        ul li a:hover {
+          background: #f1f1f1;
         }
       }
       ul.submenu {

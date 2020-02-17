@@ -21,37 +21,75 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ruslabel' ); ?></a>
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$ruslabel_description = get_bloginfo( 'description', 'display' );
-			if ( $ruslabel_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $ruslabel_description; /* WPCS: xss ok. */ ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+<div id="p_prldr">
+    <div class="contpre">
+        <span class="svg_anm"></span>
+        <br>
+        <br>
+        <div id="cube-loader">
+            <div class="caption">
+                <div class="cube-loader">
+                    <div class="cube loader-1"></div>
+                    <div class="cube loader-2"></div>
+                    <div class="cube loader-4"></div>
+                    <div class="cube loader-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ruslabel' ); ?></button>
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+</div>
+<!--Шапка сайта-->
+<header class="header_site">
+    <div class="container">
+        <div class="header_site__content">
+            <div class="col-2" id="menu_swither">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times" style="display: none;"></i>
+            </div>
+            <div class="col-8 col-lg-4">
+                <?php the_custom_logo()?>
+            </div>
+            <div class="col-2 col-lg-8">
+                <div class="header_site__contacts">
+                    <div class="d-flex info_block">
+                        <span class="level_one_text"><i class="fas fa-phone"></i> +7 (920) 377 57 54</span>
+                        <span class="level_two_text">rus.etiketka@mail.ru</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="menu_line">
+        <div class="container">
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Наши услуги</a></li>
+                    <li><a href="#" class="menu__dropdown">Продукция</a>
+                        <ul class="submenu">
+                            <li><a href="#" class="menu__dropdown">Этикетки</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Пуллеры</a></li>
+                                    <li><a href="#">Биркодержатели</a></li>
+                                    <li><a href="#">Sub menu</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#" class="menu__dropdown">Ленты</a>
+                                <ul class="submenu">
+                                    <li><a href="#">Пуллеры</a></li>
+                                    <li><a href="#">Биркодержатели</a></li>
+                                    <li><a href="#">Sub menu</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Sub menu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Контакты</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Item name</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>
 
-	<div id="content" class="site-content">

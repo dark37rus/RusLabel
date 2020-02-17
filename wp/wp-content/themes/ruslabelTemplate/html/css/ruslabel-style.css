@@ -33,7 +33,7 @@
   align-items: center; }
   .header_site__content .fas {
     padding: 10px 0; }
-  .header_site__content .logotype {
+  .header_site__content .logotype img {
     max-height: 30px;
     margin: auto;
     display: block; }
@@ -221,6 +221,8 @@
 footer .widgets_area {
   font-size: 0.8rem;
   color: #fff; }
+footer form {
+  color: #000 !important; }
 footer .caption_text, footer p {
   color: #fff; }
 footer .caption_footer_widget {
@@ -241,7 +243,6 @@ footer .bottom_line_site {
   background: #373737;
   font-size: 12px;
   height: 30px;
-  color: #fff;
   display: flex;
   align-items: center; }
   footer .bottom_line_site .container {
