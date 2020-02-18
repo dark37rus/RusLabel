@@ -10,10 +10,13 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-	</header><!-- .entry-header -->
-
+	<div class="row">
+        <div class="col-12 mb-5 mt-4">
+            <header class="entry-header">
+                <?php the_title( '<h1 class="entry-title mb-4">', '</h1>' ); ?>
+            </header><!-- .entry-header -->
+        </div>
+    </div>
 	<?php ruslabel_post_thumbnail(); ?>
 
 	<div class="entry-content">

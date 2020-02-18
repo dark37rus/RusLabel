@@ -19,7 +19,16 @@ if ( ! function_exists( 'ruslabel_setup' ) ) :
         add_theme_support( 'post-thumbnails' );
 
         register_nav_menus( array(
-            'menu-1' => esc_html__( 'Главное меню', 'ruslabel' ),
+            'menu-1' => esc_html__( 'Main menu', 'ruslabel' ),
+        ));
+        register_nav_menus( array(
+            'footer-menu-1' => esc_html__( 'footer-menu-1', 'ruslabel' ),
+        ));
+        register_nav_menus( array(
+            'footer-menu-2' => esc_html__( 'footer-menu-2', 'ruslabel' ),
+        ));
+        register_nav_menus( array(
+            'footer-menu-3' => esc_html__( 'footer-menu-3', 'ruslabel' ),
         ));
 
         add_theme_support( 'html5', array(

@@ -322,6 +322,16 @@ footer {
     }
   }
 }
+.footer-widget {
+  ul {
+    list-style: none;
+    li a{
+      font-size: 14px;
+      color: #B0B0B0;
+      line-height: 30px;
+    }
+  }
+}
 
 // preloader --------------
 #p_prldr{
@@ -471,7 +481,9 @@ footer {
   background: $bg_grey;
 }
 
-
+.entry-title {
+  font-weight: 700;
+}
 // Большие девайсы (десктопы, >= 992px)
 @media (min-width: 992px) {
   .header_site__contacts {
@@ -537,6 +549,7 @@ footer {
       }
       ul.submenu {
         width: 130%;
+        border: 1px solid #ddd;
         li {
           width: 100%;
           border-bottom: 1px solid $border_color;
@@ -579,4 +592,7 @@ footer {
       padding-left: 30px;
     }
   }
+}
+.heateor_sss_sharing_container {
+  display: none;
 }
