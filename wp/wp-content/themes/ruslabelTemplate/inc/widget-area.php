@@ -5,15 +5,15 @@ if ( ! defined("ABSPATH")) {
 }
 
 function ruslabel_widgets_init() {
-    register_sidebar( array(
-        'name'          => esc_html__( 'Sidebar', 'ruslabel' ),
-        'id'            => 'sidebar-1',
-        'description'   => esc_html__( 'Add widgets here.', 'ruslabel' ),
-        'before_widget' => '<section id="%1$s" class="widget %2$s">',
-        'after_widget'  => '</section>',
-        'before_title'  => '<h2 class="widget-title">',
-        'after_title'   => '</h2>',
-    ) );
+//    register_sidebar( array(
+//        'name'          => esc_html__( 'Sidebar', 'ruslabel' ),
+//        'id'            => 'sidebar-1',
+//        'description'   => esc_html__( 'Add widgets here.', 'ruslabel' ),
+//        'before_widget' => '<section id="%1$s" class="widget %2$s">',
+//        'after_widget'  => '</section>',
+//        'before_title'  => '<h2 class="widget-title">',
+//        'after_title'   => '</h2>',
+//    ) );
     register_sidebar( array(
         'name' => __( 'Подвал с описанием', '' ),
         'id' => 'footer-left',
@@ -64,6 +64,15 @@ function ruslabel_widgets_init() {
         'id' => 'about_us',
         'description' => __( 'Подвал', '' ),
         'before_widget' => '<div class="col-12 mb-4">',
+        'after_widget' => '</div>',
+        'before_title' => '<div class="mb-2">',
+        'after_title' => '</div>',
+    ) );
+    register_sidebar( array(
+        'name' => __( 'Строка главного меню в шапке', '' ),
+        'id' => 'main_menu_header',
+        'description' => __( 'Подвал', '' ),
+        'before_widget' => '<div class="col-12">',
         'after_widget' => '</div>',
         'before_title' => '<div class="mb-2">',
         'after_title' => '</div>',

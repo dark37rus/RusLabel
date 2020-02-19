@@ -18,18 +18,6 @@ if ( ! function_exists( 'ruslabel_setup' ) ) :
         add_theme_support( 'title-tag' );
         add_theme_support( 'post-thumbnails' );
 
-        register_nav_menus( array(
-            'menu-1' => esc_html__( 'Main menu', 'ruslabel' ),
-        ));
-        register_nav_menus( array(
-            'footer-menu-1' => esc_html__( 'footer-menu-1', 'ruslabel' ),
-        ));
-        register_nav_menus( array(
-            'footer-menu-2' => esc_html__( 'footer-menu-2', 'ruslabel' ),
-        ));
-        register_nav_menus( array(
-            'footer-menu-3' => esc_html__( 'footer-menu-3', 'ruslabel' ),
-        ));
 
         add_theme_support( 'html5', array(
             'search-form',
@@ -55,11 +43,3 @@ if ( ! function_exists( 'ruslabel_setup' ) ) :
     }
 endif;
 add_action( 'after_setup_theme', 'ruslabel_setup' );
-
-function ruslabel_content_width() {
-    // This variable is intended to be overruled from themes.
-    // Open WPCS issue: {@link https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards/issues/1043}.
-    // phpcs:ignore WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound
-    $GLOBALS['content_width'] = apply_filters( 'ruslabel_content_width', 640 );
-}
-add_action( 'after_setup_theme', 'ruslabel_content_width', 0 );

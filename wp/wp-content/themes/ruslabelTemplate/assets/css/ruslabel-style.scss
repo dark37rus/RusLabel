@@ -91,7 +91,6 @@ $black_bg: #1c1c1c;
   }
 }
 .menu_line {
-  display: none;
   width: 100%;
   background: #fff;
   font-size: 14px;
@@ -100,9 +99,6 @@ $black_bg: #1c1c1c;
     list-style: none;
     margin: 0 -1rem ;
     font-weight: 600;
-    li {
-      border-bottom: 1px solid $border_color;
-    }
   }
   .menu li a {
     text-decoration: none;
@@ -111,6 +107,7 @@ $black_bg: #1c1c1c;
     padding: 1.2rem 1rem;
     position: relative;
     transition: all 0.5s;
+    border-bottom: 1px solid $border_color;
   }
 
   .menu li a:hover {
@@ -128,10 +125,6 @@ $black_bg: #1c1c1c;
     transition: all 0.5s;
   }
 
-  .menu__dropdown.active:after {
-    content: '\f106';
-  }
-
   .submenu {
     display: none;
     list-style: none;
@@ -139,11 +132,13 @@ $black_bg: #1c1c1c;
   }
 
   .submenu li a {
-    padding-left: 20px;
+    padding-left: 2rem;
+    font-weight: 400;
+    background: #f1f1f1;
   }
 
   .submenu li .submenu li a {
-    padding-left: 30px;
+    padding-left: 3rem;
   }
 }
 
@@ -484,6 +479,11 @@ footer {
 .entry-title {
   font-weight: 700;
 }
+.wp-post-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
 // Большие девайсы (десктопы, >= 992px)
 @media (min-width: 992px) {
   .header_site__contacts {
@@ -526,6 +526,12 @@ footer {
         }
         &:hover {
           background: none;
+          >  ul {
+            display: flex;
+          }
+          > .menu__dropdown:after {
+            content: '\f105';
+          }
         }
         > a {
           display: block;
@@ -548,20 +554,26 @@ footer {
         }
       }
       ul.submenu {
-        width: 130%;
+        min-width: 250px;
         border: 1px solid #ddd;
         li {
           width: 100%;
           border-bottom: 1px solid $border_color;
+
           ul.submenu {
             left: 100%;
-            top: 0;
+            top: -1px;
+            li a {
+              padding-left: 3rem;
+            }
           }
           a {
-            padding-left: 20px;
+            padding-left: 2rem;
             color: $fiol;
-
+            font-weight: 400;
+            background: #fff;
           }
+
         }
       }
     }

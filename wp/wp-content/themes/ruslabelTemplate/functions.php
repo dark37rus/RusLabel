@@ -2,6 +2,8 @@
 
 require get_template_directory() . './inc/theme-settings.php';
 
+require get_template_directory() . './inc/navigation.php';
+
 require get_template_directory() . './inc/widget-area.php';
 
 require get_template_directory() . './inc/enqueue-script-style.php';

@@ -43,10 +43,13 @@
 <header class="header_site">
     <div class="container">
         <div class="header_site__content">
-            <div class="col-2" id="menu_swither">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-times" style="display: none;"></i>
-            </div>
+            <button class="navbar-toggler navbar-light d-md-none" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+<!--            <div class="col-2" id="menu_swither">-->
+<!--                <i class="fas fa-bars"></i>-->
+<!--                <i class="fas fa-times" style="display: none;"></i>-->
+<!--            </div>-->
             <div class="col-8 col-lg-4">
                 <?php the_custom_logo()?>
             </div>
@@ -62,33 +65,11 @@
     </div>
     <div class="menu_line">
         <div class="container">
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">Наши услуги</a></li>
-                    <li><a href="#" class="menu__dropdown">Продукция</a>
-                        <ul class="submenu">
-                            <li><a href="#" class="menu__dropdown">Этикетки</a>
-                                <ul class="submenu">
-                                    <li><a href="#">Пуллеры</a></li>
-                                    <li><a href="#">Биркодержатели</a></li>
-                                    <li><a href="#">Sub menu</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#" class="menu__dropdown">Ленты</a>
-                                <ul class="submenu">
-                                    <li><a href="#">Пуллеры</a></li>
-                                    <li><a href="#">Биркодержатели</a></li>
-                                    <li><a href="#">Sub menu</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Sub menu</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Контакты</a></li>
-                    <li><a href="#">О нас</a></li>
-                    <li><a href="#">Item name</a></li>
-                </ul>
-            </nav>
+                <nav class="navbar navbar-expand-lg w-100 p-0">
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <?php ruslabel_main_menu() ?>
+                    </div>
+                </nav>
         </div>
     </div>
 </header>
