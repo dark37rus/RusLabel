@@ -8,13 +8,12 @@
  */
 
 ?>
-
 <div class="container">
     <div class="row">
         <?php if (is_singular()) : ?>
             <article class="col-12" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <?php else : ?>
-            <article class="col-12 col-md-3 mb-4" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+            <article class="col-6 col-md-3 mb-4" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <?php endif; ?>
                 <?php if ('post' === get_post_type()) : ?>
 

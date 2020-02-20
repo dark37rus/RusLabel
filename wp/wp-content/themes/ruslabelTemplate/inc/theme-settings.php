@@ -13,7 +13,6 @@ if ( ! function_exists( 'ruslabel_setup' ) ) :
      */
     function ruslabel_setup() {
 
-        load_theme_textdomain( 'ruslabel', get_template_directory() . '/languages' );
         add_theme_support( 'automatic-feed-links' );
         add_theme_support( 'title-tag' );
         add_theme_support( 'post-thumbnails' );

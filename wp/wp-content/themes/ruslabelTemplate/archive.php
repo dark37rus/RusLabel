@@ -14,10 +14,19 @@ get_header();
 		<main id="main" class="site-main">
 
 		<?php if ( have_posts() ) : ?>
-
+            <div class="container">
+                <nav aria-label="breadcrumb" class="w-100">
+                    <nav aria-label="breadcrumb" class="w-100">
+                        <div class="breadcrumb">
+                            <a href="<?php echo home_url(); ?>""><i class="fas fa-home"></i></a> /
+                            <?php the_category(' / ', multiple ); ?>
+                        </div>
+                    </nav>
+                </nav>
+            </div>
 			<header class="page-header">
+                <h1 class="page-title"><?php echo get_the_archive_title() ?></h1>
 				<?php
-				the_archive_title( '<h1 class="page-title">', '</h1>' );
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
