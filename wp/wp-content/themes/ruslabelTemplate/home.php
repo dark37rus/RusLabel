@@ -65,32 +65,34 @@ get_header();
         </div>
         <div class="row">
             <div class="col-6 col-md-2 mb-3">
-                <div class="category_box d-flex" style='background: linear-gradient(0deg, rgba(56, 23, 120, 0.3), rgba(56, 23, 120, 0.3)), url("./img/1.jpg");'>
+                <a href="http://ruslabel.loc:81/category/%d1%8d%d1%82%d0%b8%d0%ba%d0%b5%d1%82%d0%ba%d0%b8/"><div class="category_box d-flex" style='background: linear-gradient(0deg, rgba(56, 23, 120, 0.3), rgba(56, 23, 120, 0.3)), url("<?php echo get_template_directory_uri()?>/assets/img/1.jpg");'>
                     <span>Этикетки</span>
                 </div>
+                </a>
             </div>
             <div class="col-6 col-md-2 mb-3">
-                <div class="category_box d-flex" style='background: linear-gradient(0deg, rgba(56, 23, 120, 0.3), rgba(56, 23, 120, 0.3)), url("./img/2.jpg");'>
+                <a href="http://ruslabel.loc:81/category/%d0%bb%d0%b5%d0%bd%d1%82%d1%8b/"><div class="category_box d-flex" style='background: linear-gradient(0deg, rgba(56, 23, 120, 0.3), rgba(56, 23, 120, 0.3)), url("<?php echo get_template_directory_uri()?>/assets/img/2.jpg");'>
                     <span>Ленты</span>
                 </div>
+                </a>
             </div>
             <div class="col-6 col-md-2 mb-3">
-                <div class="category_box d-flex" style='background: linear-gradient(0deg, rgba(56, 23, 120, 0.3), rgba(56, 23, 120, 0.3)), url("./img/3.jpg");'>
+                <div class="category_box d-flex" style='background: linear-gradient(0deg, rgba(56, 23, 120, 0.3), rgba(56, 23, 120, 0.3)), url("<?php echo get_template_directory_uri()?>/assets/img/3.jpg");'>
                     <span>Шнуры</span>
                 </div>
             </div>
             <div class="col-6 col-md-2 mb-3">
-                <div class="category_box d-flex" style='background: linear-gradient(0deg, rgba(56, 23, 120, 0.3), rgba(56, 23, 120, 0.3)), url("./img/1.jpg");'>
+                <div class="category_box d-flex" style='background: linear-gradient(0deg, rgba(56, 23, 120, 0.3), rgba(56, 23, 120, 0.3)), url("<?php echo get_template_directory_uri()?>/assets/img/1.jpg");'>
                     <span>Бирко держатели</span>
                 </div>
             </div>
             <div class="col-6 col-md-2 mb-3">
-                <div class="category_box d-flex" style='background: linear-gradient(0deg, rgba(56, 23, 120, 0.3), rgba(56, 23, 120, 0.3)), url("./img/2.jpg");'>
+                <div class="category_box d-flex" style='background: linear-gradient(0deg, rgba(56, 23, 120, 0.3), rgba(56, 23, 120, 0.3)), url("<?php echo get_template_directory_uri()?>/assets/img/2.jpg");'>
                     <span>Пуллеры</span>
                 </div>
             </div>
             <div class="col-6 col-md-2 mb-3">
-                <div class="category_box d-flex" style='background: linear-gradient(0deg, rgba(56, 23, 120, 0.3), rgba(56, 23, 120, 0.3)), url("./img/3.jpg");'>
+                <div class="category_box d-flex" style='background: linear-gradient(0deg, rgba(56, 23, 120, 0.3), rgba(56, 23, 120, 0.3)), url("<?php echo get_template_directory_uri()?>/assets/img/3.jpg");'>
                     <span>Кружева</span>
                 </div>
             </div>
@@ -142,28 +144,28 @@ get_header();
         </div>
         <div class="row advantages">
             <div class="col-12 col-md-3 advantages__block">
-                <img src="./img/delivery.jpg" alt="Бесплатная доставка">
+                <img src="<?php echo get_template_directory_uri()?>/assets/img/delivery.jpg" alt="Бесплатная доставка">
                 <div class="advantages__info">
                     <span class="advantages__title">Бесплатная доставка</span>
                     <span class="advantages__term">По городу иваново</span>
                 </div>
             </div>
             <div class="col-12 col-md-3 advantages__block">
-                <img src="./img/create_maket.jpg" alt="Бесплатная доставка">
+                <img src="<?php echo get_template_directory_uri()?>/assets/img/create_maket.jpg" alt="Бесплатная доставка">
                 <div class="advantages__info">
                     <span class="advantages__title">Разработка макета</span>
                     <span class="advantages__term">При заказе с сайта бесплатно</span>
                 </div>
             </div>
             <div class="col-12 col-md-3 advantages__block">
-                <img src="./img/narezka.jpg" alt="Бесплатная доставка">
+                <img src="<?php echo get_template_directory_uri()?>/assets/img/narezka.jpg" alt="Бесплатная доставка">
                 <div class="advantages__info">
                     <span class="advantages__title">Бесплатная резка</span>
                     <span class="advantages__term">сгиб, загиб этикеток</span>
                 </div>
             </div>
             <div class="col-12 col-md-3 advantages__block">
-                <img src="./img/sale_feedback.jpg" alt="Бесплатная доставка">
+                <img src="<?php echo get_template_directory_uri()?>/assets/img/sale_feedback.jpg" alt="Бесплатная доставка">
                 <div class="advantages__info">
                     <span class="advantages__title">Скидка 5%</span>
                     <span class="advantages__term">за оставленый отзыв</span>

@@ -8,8 +8,7 @@
  */
 
 ?>
-<div class="container">
-    <div class="row">
+
         <?php if (is_singular()) : ?>
             <article class="col-12" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
         <?php else : ?>
@@ -46,6 +45,3 @@
         <?php the_title('<h5 class="entry-title"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>');
         endif; ?>
         </article><!-- #post-<?php the_ID(); ?> -->
-    </div>
-</div>
-
