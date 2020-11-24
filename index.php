@@ -14,4 +14,5 @@
 define( 'WP_USE_THEMES', true );
 
 /** Loads the WordPress Environment and Template */
+//6XL3 I345 W3J2 N6TR
 require( dirname( __FILE__ ) . './wp/wp-blog-header.php' );
